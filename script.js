@@ -69,11 +69,29 @@ const PLANS = [
     storage: '20 GB', ram: '6 GB', cpu: '3 Core', bandwidth: 'Unlimited', addons: 'Unlimited',
     freeDomain: '.com / .app / .biz / .org', monthly: 6.99, yearly: 69,
     tagline: 'For news portals and high-traffic sites.' },
-  { id: 'business-50', name: '50 GB Business Hosting', tier: 'Enterprise',
+  { id: 'business-50', name: '50 GB Business Hosting', tier: 'Business',
     storage: '50 GB', ram: '8 GB', cpu: '4 Core', bandwidth: 'Unlimited', addons: 'Unlimited',
     freeDomain: '.com / .net / .org / .dev', monthly: 9.99, yearly: 99,
-    tagline: 'For agencies and resource-heavy applications.' }
+    tagline: 'For agencies and resource-heavy applications.' },
+  { id: 'business-100', name: '100 GB Business Hosting', tier: 'Enterprise',
+    storage: '100 GB', ram: '12 GB', cpu: '6 Core', bandwidth: 'Unlimited', addons: 'Unlimited',
+    freeDomain: '.com / .net / .org / .io', monthly: 14.99, yearly: 149,
+    extras: ['Free Dedicated IP', 'Priority Support Queue'],
+    tagline: 'For large stores and busy media websites.' },
+  { id: 'business-200', name: '200 GB Business Hosting', tier: 'Scale',
+    storage: '200 GB', ram: '16 GB', cpu: '8 Core', bandwidth: 'Unlimited', addons: 'Unlimited',
+    freeDomain: '.com / .net / .cloud / .io', monthly: 24.99, yearly: 249,
+    extras: ['Free Dedicated IP', 'Priority Support Queue', 'Free Cloudflare CDN'],
+    tagline: 'For multi-site portfolios and SaaS platforms.' },
+  { id: 'business-500', name: '500 GB Business Hosting', tier: 'Ultimate',
+    storage: '500 GB', ram: '24 GB', cpu: '12 Core', bandwidth: 'Unlimited', addons: 'Unlimited',
+    freeDomain: '.com / .net / .cloud / .ai', monthly: 39.99, yearly: 399,
+    extras: ['Free Dedicated IP', 'Priority Support Queue', 'Free Cloudflare CDN', 'Dedicated Account Manager'],
+    tagline: 'For enterprises running mission-critical workloads.' }
 ];
+
+/* Premium add-ons that only the larger plans include. */
+const EXTRA_FEATURES = ['Free Dedicated IP', 'Priority Support Queue', 'Free Cloudflare CDN', 'Dedicated Account Manager'];
 
 /* ---------- helpers ---------- */
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -104,6 +122,7 @@ function specList(plan) {
     `${plan.cpu} CPU (AMD Ryzen 9)`,
     `${plan.bandwidth} Bandwidth`,
     `${plan.addons} Addon Domains`,
+    ...(plan.extras || []),
     ...COMMON_FEATURES
   ];
 }
@@ -187,6 +206,7 @@ function renderCompare() {
     ['CPU (AMD Ryzen 9)', p => p.cpu],
     ['Bandwidth', p => p.bandwidth],
     ['Addon Domains', p => p.addons],
+    ...EXTRA_FEATURES.map(f => [f, p => (p.extras || []).includes(f) ? checkIcon : '<span class="no">—</span>']),
     ...COMMON_FEATURES.map(f => [f, () => checkIcon])
   ];
   table.innerHTML = `
