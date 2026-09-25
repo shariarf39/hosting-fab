@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fab Host business web hosting with NVMe SSD storage, LiteSpeed, cPanel, free SSL and daily backups. Plans priced in USD and BDT.">
+  <title>Fab Host | Fast, Secure Business Web Hosting</title>
+  <link rel="icon" type="image/svg+xml" href="logo-mark.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>24/7 expert support · Free website migration</span>
+      <span class="topbar-links">
+        <a data-phone href="#"></a>
+        <a data-email href="#"></a>
+      </span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Fab Host home">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <defs><linearGradient id="fhA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f5bff"/><stop offset="1" stop-color="#6a4dff"/></linearGradient></defs>
+          <rect width="48" height="48" rx="12" fill="url(#fhA)"/>
+          <rect x="16" y="12" width="6.5" height="24" rx="3.25" fill="#fff"/>
+          <rect x="16" y="12" width="19" height="6.5" rx="3.25" fill="#fff"/>
+          <rect x="16" y="21.5" width="13" height="6.5" rx="3.25" fill="#6ee7c8"/>
+        </svg><span class="brand-name">Fab<b>Host</b></span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#plans">Hosting Plans</a>
+        <a href="#features">Features</a>
+        <a href="#compare">Compare</a>
+        <a href="#faq">FAQ</a>
+        <a href="#support">Support</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button button-primary button-small" href="#plans">Get Started</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse"></span> Pro Business Hosting on AMD Ryzen 9 NVMe servers</p>
+          <h1>Hosting built for businesses that <span class="grad">can't afford downtime</span>.</h1>
+          <p class="lead">AMD Ryzen 9 servers, NVMe SSD storage and LiteSpeed. Your website loads fast, stays protected and gets backed up daily, with cPanel and free SSL on every plan.</p>
+          <div class="hero-actions">
+            <a class="button button-primary button-lg" href="#plans">View Hosting Plans</a>
+            <a class="button button-ghost button-lg" href="#compare">Compare Plans</a>
+          </div>
+          <ul class="hero-trust">
+            <li>99.9% uptime</li>
+            <li>Free SSL</li>
+            <li>Daily backups</li>
+            <li>Free migration</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="server-card">
+            <div class="server-head">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span>fabhost · server status</span>
+            </div>
+            <div class="server-row"><span>Uptime (30 days)</span><strong class="ok">99.98%</strong></div>
+            <div class="server-row"><span>Avg. response time</span><strong>182 ms</strong></div>
+            <div class="server-row"><span>Storage</span><strong>NVMe SSD</strong></div>
+            <div class="server-row"><span>Web server</span><strong>LiteSpeed</strong></div>
+            <div class="meter"><span style="width:82%"></span></div>
+            <p class="meter-label">Security scan: Imunify360 active</p>
+          </div>
+          <div class="float-chip chip-a">SSL Secured</div>
+          <div class="float-chip chip-b">Backup completed</div>
+        </div>
+      </div>
+
+      <div class="container stats reveal">
+        <div><strong>99.9%</strong><span>Uptime guarantee</span></div>
+        <div><strong>Ryzen 9</strong><span>AMD server CPUs</span></div>
+        <div><strong>NVMe</strong><span>SSD on every plan</span></div>
+        <div><strong>24/7</strong><span>Support team</span></div>
+      </div>
+    </section>
+
+    <!-- Plans -->
+    <section class="section plans-section" id="plans">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Pro Business Hosting</p>
+          <h2>Choose the plan that fits your business</h2>
+          <p class="section-sub">Every plan includes cPanel, LiteSpeed, free SSL, daily backups and unlimited email. Upgrade anytime.</p>
+          <div class="cycle-toggle" role="group" aria-label="Billing cycle">
+            <button type="button" data-cycle="annually" aria-pressed="true">Yearly <em>Save up to 18% + free domain</em></button>
+            <button type="button" data-cycle="monthly" aria-pressed="false">Monthly</button>
+          </div>
+        </div>
+        <div class="plan-grid" id="planGrid"></div>
+        <p class="plans-note">All plans include a 30-day money-back guarantee. Need something custom? <a href="#support">Talk to our team</a>.</p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Why Fab Host</p>
+          <h2>Everything you need to run a serious website</h2>
+          <p class="section-sub">Hardware and software for speed and security, included on every plan at no extra cost.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <span class="f-icon"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span>
+            <h3>LiteSpeed + NVMe speed</h3>
+            <p>LiteSpeed Web Server on NVMe SSDs loads pages much faster than traditional Apache and SATA setups.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="f-icon"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg></span>
+            <h3>Imunify360 security</h3>
+            <p>Real-time malware scanning, a web application firewall and brute-force protection keep your site safe.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="f-icon"><svg viewBox="0 0 24 24"><path d="M12 4a8 8 0 1 0 8 8h-2a6 6 0 1 1-1.8-4.2L13 11h7V4l-2.4 2.4A8 8 0 0 0 12 4z"/></svg></span>
+            <h3>Daily automatic backups</h3>
+            <p>Your files and databases are backed up every day, and you can restore them from cPanel in a few clicks.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="f-icon"><svg viewBox="0 0 24 24"><path d="M3 5h18v10H3zm2 2v6h14V7zM8 19h8v2H8z"/></svg></span>
+            <h3>cPanel control panel</h3>
+            <p>The industry-standard control panel for domains, email, databases, files and SSL certificates.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="f-icon"><svg viewBox="0 0 24 24"><path d="M8 3 2 12l6 9h2l-6-9 6-9zm8 0h-2l6 9-6 9h2l6-9z"/></svg></span>
+            <h3>Developer friendly</h3>
+            <p>Ruby, Python and NodeJS apps, SSH access and Softaculous one-click installers for 400+ apps.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="f-icon"><svg viewBox="0 0 24 24"><path d="M4 12h12l-4-4 1.4-1.4L20 13l-6.6 6.4L12 18l4-4H4z"/></svg></span>
+            <h3>Free website migration</h3>
+            <p>Moving from another host? Our engineers transfer your website, databases and email at no charge.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compare -->
+    <section class="section compare-section" id="compare">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Plan comparison</p>
+          <h2>Compare every feature side by side</h2>
+        </div>
+        <div class="table-wrap reveal">
+          <table class="compare-table" id="compareTable"></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Frequently asked questions</h2>
+          <p class="section-sub">Can't find your answer? Call us on <a data-phone href="#"></a> and our team will help.</p>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button aria-expanded="false">How quickly is my hosting activated?<span></span></button>
+            <div class="faq-a"><p>Your account is set up as soon as payment is confirmed, usually within a few minutes. Login details are sent to your email.</p></div>
+          </div>
+          <div class="faq-item">
+            <button aria-expanded="false">Which payment methods do you accept?<span></span></button>
+            <div class="faq-a"><p>We accept Visa, Mastercard, American Express and UnionPay cards through Stripe. When you order, Stripe's secure payment page opens and you enter your card details there. Fab Host never sees or stores your card number.</p></div>
+          </div>
+          <div class="faq-item">
+            <button aria-expanded="false">How do I get a free domain?<span></span></button>
+            <div class="faq-a"><p>Choose yearly billing on any plan and you get a free domain for the first year. Available extensions depend on the plan and are listed on each pricing card.</p></div>
+          </div>
+          <div class="faq-item">
+            <button aria-expanded="false">Can you move my existing website to Fab Host?<span></span></button>
+            <div class="faq-a"><p>Yes. Website migration is free on every plan. After you order, contact support and we'll move your files, databases and email for you.</p></div>
+          </div>
+          <div class="faq-item">
+            <button aria-expanded="false">Can I upgrade my plan later?<span></span></button>
+            <div class="faq-a"><p>Yes, you can upgrade at any time with no downtime. You pay only the prorated difference for the rest of your billing period.</p></div>
+          </div>
+          <div class="faq-item">
+            <button aria-expanded="false">Do you offer a money-back guarantee?<span></span></button>
+            <div class="faq-a"><p>Yes. If you're not satisfied within the first 30 days, contact support for a full refund of your hosting fee.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support CTA -->
+    <section class="support-section" id="support">
+      <div class="container support-box reveal">
+        <div>
+          <p class="eyebrow light">We're here to help</p>
+          <h2>Talk to a hosting expert</h2>
+          <p>Questions about plans, migration or billing? Our support team is available 24/7.</p>
+        </div>
+        <div class="support-actions">
+          <a class="support-contact" data-phone data-keep-text href="#">
+            <span class="sc-label">Call support</span>
+            <strong data-phone></strong>
+          </a>
+          <a class="support-contact" data-email href="#"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+            <defs><linearGradient id="fhB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f5bff"/><stop offset="1" stop-color="#6a4dff"/></linearGradient></defs>
+            <rect width="48" height="48" rx="12" fill="url(#fhB)"/>
+            <rect x="16" y="12" width="6.5" height="24" rx="3.25" fill="#fff"/>
+            <rect x="16" y="12" width="19" height="6.5" rx="3.25" fill="#fff"/>
+            <rect x="16" y="21.5" width="13" height="6.5" rx="3.25" fill="#6ee7c8"/>
+          </svg><span class="brand-name">Fab<b>Host</b></span>
+        </a>
+        <p>Fast, secure and reliable web hosting for businesses, news portals and online stores.</p>
+      </div>
+      <div>
+        <h4>Hosting</h4>
+        <a href="#plans">Business Hosting</a>
+        <a href="#compare">Compare Plans</a>
+        <a href="#features">Features</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#faq">FAQ</a>
+        <a href="#support">Contact</a>
+        <a href="#faq">Refund Policy</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a data-phone href="#"></a>
+        <a data-email href="#"></a>
+        <span class="muted">Available 24/7</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Fab Host. All rights reserved.</p>
+      <p class="pay-badges"><span>Visa</span><span>Mastercard</span><span>Amex</span><span>Secured by Stripe</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

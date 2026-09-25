@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Fab Host">
+  <title>Fab Host</title>
+  <defs>
+    <linearGradient id="fhTile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f5bff"/>
+      <stop offset="1" stop-color="#6a4dff"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="url(#fhTile)"/>
+  <rect x="16" y="12" width="6.5" height="24" rx="3.25" fill="#ffffff"/>
+  <rect x="16" y="12" width="19" height="6.5" rx="3.25" fill="#ffffff"/>
+  <rect x="16" y="21.5" width="13" height="6.5" rx="3.25" fill="#6ee7c8"/>
+</svg>
